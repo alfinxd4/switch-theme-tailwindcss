@@ -1,0 +1,23 @@
+{
+  "name": "jobhunter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "dev": "npx tailwindcss -i ./src/tailwind.css -o ./src/app.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfinxd4/jobhunter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alfinxd4/jobhunter/issues"
+  },
+  "homepage": "https://github.com/alfinxd4/jobhunter#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.7"
+  }
+}
