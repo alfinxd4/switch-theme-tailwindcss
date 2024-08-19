@@ -8,7 +8,7 @@ const systemTheme = window.matchMedia("(prefers-color-scheme:dark)").matches;
 //check initial theme 
 const checkTheme = () => {
     //dark mode
-    if (userTheme == "dark"  ) {
+    if (userTheme == "dark" || switchTheme == "dark"  ) {
         document.documentElement.classList.add('dark');
         localStorage.setItem('theme','dark');
         return "dark";
