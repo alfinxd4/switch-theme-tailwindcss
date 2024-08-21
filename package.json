@@ -1,12 +1,12 @@
 {
-  "name": "jobhunter",
+  "name": "tailwind-dark-light-mode",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx tailwindcss -i ./src/tailwind.css -o ./src/app.css --watch",
-    "minify": "npx tailwindcss -o ./src/build.css --minify"
+    "dev": "npx tailwindcss -i ./src/styles/main.css -o ./dist/app.css --watch",
+    "minify": "npx tailwindcss -o ./dist/app-min.css --minify"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,6 @@
     "postcss": "^8.4.40",
     "postcss-import": "^16.1.0",
     "tailwindcss": "^3.4.10"
-  }
+  },
+  "dependencies": {}
 }
