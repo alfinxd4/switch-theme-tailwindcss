@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Dark/Light Mode</title>
+    <!-- Tailwind Local -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Tailwind Local (Minify) -->
+    <link rel="stylesheet" href="app-min.css">
+    <!-- Tailwind CDN -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+</head>
+
+<body class="bg-slate-100 dark:bg-slate-900 max-w-sm mx-auto">
+
+    <!-- moon & sun -->
+    <div class="relative bg-orange-600 dark:bg-sky-700 size-52 mx-auto rounded-full mt-10">
+        <div class="dark:bg-slate-900 size-40 rounded-full absolute end-0"></div>
+    </div>
+
+    <!-- text -->
+    <div class="text-center mt-5 dark:text-white">
+        <p class="font-medium text-2xl mb-3">Choose a Style</p>
+        <p class="font-medium text-sm">Pop or Subtle. Day or Night</p>
+        <p class="font-medium text-sm">Customize your style</p>
+    </div>
+
+    <!-- switch-btn -->
+    <div class="text-center mt-5">
+        <label class="inline-flex items-center space-x-3 cursor-pointer">
+            <span class="font-medium dark:text-white text-orange-600">Light</span>
+            <input type="checkbox" class="peer sr-only" id="btn-switch">
+            <!-- toogle -->
+            <div class="relative w-28 h-14 bg-slate-400 dark:bg-slate-300 rounded-full
+             focus:outline-none
+             after:content-[''] after:absolute after:start-[10px]  after:size-12 after:bg-orange-600 dark:after:bg-sky-700 after:rounded-full
+             after:top-1 after:transition-all dark:after:translate-x-full">
+            </div>
+            <span class="font-medium dark:text-sky-700">Dark</span>
+        </label>
+    </div>
+
+    <!-- app.js -->
+    <script src="../src/js/app.js"></script>
+</body>
+
+</html>
