@@ -1,1 +1,1 @@
-# Switch Dark/Light using Tailwind CS
+# Switch Dark/Light using Tailwind CSS
